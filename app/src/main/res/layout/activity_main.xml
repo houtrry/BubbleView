@@ -11,6 +11,7 @@
     <com.houtrry.library.BubbleRelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,7 +30,9 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
             android:src="@drawable/girl"/>
 
         <TextView
