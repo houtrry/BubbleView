@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bubble="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.houtrry.bubbleview.MainActivity">
+
+    <com.houtrry.library.BubbleRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        bubble:arrowOffset="30dp"
+        bubble:arrowType="right"
+        bubble:arrow_height="7dp"
+        bubble:arrow_width="14dp"
+        bubble:borderColor="#ffff4444"
+        bubble:borderWidth="1px"
+        bubble:bubbleType="left"
+        bubble:cornerRadius="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/girl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="BubbleLinearLayout Text"
+            android:textColor="@android:color/black"/>
+    </com.houtrry.library.BubbleRelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

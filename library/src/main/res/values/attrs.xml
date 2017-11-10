@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleRelativeLayout">
+        <attr name="bubbleType">
+            <flag name="left" value="0x0000"/>
+            <flag name="top" value="0x0001"/>
+            <flag name="right" value="0x0002"/>
+            <flag name="bottom" value="0x0003"/>
+        </attr>
+        <attr name="arrowType">
+            <flag name="left" value="0x0100"/>
+            <flag name="center" value="0x0101"/>
+            <flag name="right" value="0x0102"/>
+        </attr>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color|reference"/>
+        <attr name="arrow_width" format="dimension"/>
+        <attr name="arrow_height" format="dimension"/>
+        <attr name="arrowOffset" format="dimension"/>
+    </declare-styleable>
+</resources>
