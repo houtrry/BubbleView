@@ -151,6 +151,10 @@ public class BubbleRelativeLayout extends RelativeLayout {
     @Override
     public void draw(Canvas canvas) {
         canvas.save();
+        /**
+         * !!! 关键在这里
+         * 通过裁剪canvas达到效果
+         */
         canvas.clipPath(mClipPath);
         super.draw(canvas);
         canvas.drawPath(mClipPath, mPaint);
