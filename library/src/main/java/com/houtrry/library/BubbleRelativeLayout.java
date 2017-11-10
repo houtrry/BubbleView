@@ -161,6 +161,11 @@ public class BubbleRelativeLayout extends RelativeLayout {
         canvas.restore();
     }
 
+    @Override
+    protected void dispatchDraw(Canvas canvas) {
+        super.dispatchDraw(canvas);
+    }
+
     private void createClipPath() {
         mClipPath.reset();
         switch (mBubbleType) {
