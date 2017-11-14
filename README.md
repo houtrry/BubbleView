@@ -1,7 +1,8 @@
 # BubbleView
 裁剪聊天气泡控件
 ## 实现效果
-
+![截图](https://raw.githubusercontent.com/houtrry/BubbleView/master/img/Screenshot_2017-11-14-20-35-13.png)  
+上面的是RelativeLayout, 下面的是这次实现的控件com.houtrry.library.BubbleRelativeLayout
 
 ## 实现原理
 
