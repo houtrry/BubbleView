@@ -6,45 +6,293 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="com.houtrry.bubbleview.MainActivity">
 
-    <com.houtrry.library.BubbleRelativeLayout
+    <RelativeLayout
+        android:id="@+id/rl_item_voice_message_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/dimens5"
+        android:layout_marginRight="@dimen/dimens58"
+        android:layout_marginTop="@dimen/dimens14"
+        android:maxWidth="@dimen/dimens219"
+        app:layout_constraintBottom_toTopOf="@+id/br_item_voice_message_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        bubble:arrowOffset="30dp"
+        android:background="@color/color_gray_light"
+        bubble:arrowOffset="@dimen/dimens15"
         bubble:arrowType="right"
-        bubble:arrow_height="7dp"
-        bubble:arrow_width="14dp"
-        bubble:borderColor="#ffff4444"
-        bubble:borderWidth="1px"
+        bubble:arrow_height="@dimen/dimens5"
+        bubble:arrow_width="@dimen/dimens10"
+        bubble:borderColor="@color/color_gray_dark"
+        bubble:border_width="@dimen/px1"
         bubble:bubbleType="left"
-        bubble:cornerRadius="10dp"
-        >
+        bubble:cornerRadius="@dimen/dimens5">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <RelativeLayout
+            android:id="@+id/rl_item_weather_synopsis1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginBottom="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/girl"/>
+            android:background="@mipmap/ic_weather_day_shine">
+
+            <TextView
+                android:id="@+id/tv_item_weather_temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="28°"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize43"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_weather_state1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dimens17"
+                android:layout_toRightOf="@id/tv_item_weather_temp1"
+                android:text="晴转多云"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize14"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_weather_temp_range1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item_weather_state1"
+                android:layout_marginBottom="@dimen/dimens15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dimens8"
+                android:layout_toRightOf="@id/tv_item_weather_temp1"
+                android:text="23°~31°"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize14"
+                />
+
+        </RelativeLayout>
 
         <TextView
+            android:id="@+id/tv_item_weather_desc_state1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="4dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="10dp"
-            android:text="BubbleLinearLayout Text"
-            android:textColor="@android:color/black"/>
+            android:layout_below="@id/rl_item_weather_synopsis1"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens12"
+            android:text="深圳市今天多云"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/textSize15"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_desc_real_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_desc_state1"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens12"
+            android:text="实时: 28°"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_desc_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_desc_real_time1"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="温度: 23°C/32°C"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_wind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_desc_temp1"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="风力: 东北风3-4级"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_air1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_wind1"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="空气质量指数: 38, 优"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_source1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_air1"
+            android:layout_marginBottom="@dimen/dimens12"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="来源: 中国天气网"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+    </RelativeLayout>
+
+    <com.houtrry.library.BubbleRelativeLayout
+        android:id="@+id/br_item_voice_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens5"
+        android:layout_marginRight="@dimen/dimens58"
+        android:layout_marginTop="@dimen/dimens14"
+        android:maxWidth="@dimen/dimens219"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_item_voice_message_content"
+        bubble:arrowOffset="@dimen/dimens15"
+        bubble:arrowType="right"
+        bubble:arrow_height="@dimen/dimens5"
+        bubble:arrow_width="@dimen/dimens10"
+        bubble:borderColor="@color/color_gray_dark"
+        bubble:border_width="@dimen/px1"
+        bubble:bubbleType="left"
+        bubble:cornerRadius="@dimen/dimens5">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_weather_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/ic_weather_day_shine">
+
+            <TextView
+                android:id="@+id/tv_item_weather_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="28°"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize43"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_weather_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dimens17"
+                android:layout_toRightOf="@id/tv_item_weather_temp"
+                android:text="晴转多云"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize14"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_weather_temp_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item_weather_state"
+                android:layout_marginBottom="@dimen/dimens15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dimens8"
+                android:layout_toRightOf="@id/tv_item_weather_temp"
+                android:text="23°~31°"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize14"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_weather_desc_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_item_weather_synopsis"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens12"
+            android:text="深圳市今天多云"
+            android:textColor="@color/text_default_color"
+            android:textSize="@dimen/textSize15"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_desc_real_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_desc_state"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens12"
+            android:text="实时: 28°"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_desc_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_desc_real_time"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="温度: 23°C/32°C"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_desc_temp"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="风力: 东北风3-4级"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_wind"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="空气质量指数: 38, 优"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_weather_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_weather_air"
+            android:layout_marginBottom="@dimen/dimens12"
+            android:layout_marginLeft="@dimen/dimens20"
+            android:layout_marginTop="@dimen/dimens7"
+            android:text="来源: 中国天气网"
+            android:textColor="@color/color_select"
+            android:textSize="@dimen/textSize13"
+            />
     </com.houtrry.library.BubbleRelativeLayout>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize13">13sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize15">15sp</dimen>
+    <dimen name="textSize43">43sp</dimen>
+    <dimen name="dimens5">5dp</dimen>
+    <dimen name="dimens7">7dp</dimen>
+    <dimen name="dimens8">8dp</dimen>
+    <dimen name="dimens10">10dp</dimen>
+    <dimen name="dimens12">12dp</dimen>
+    <dimen name="dimens14">14dp</dimen>
+    <dimen name="dimens15">15dp</dimen>
+    <dimen name="dimens17">17dp</dimen>
+    <dimen name="dimens20">20dp</dimen>
+    <dimen name="dimens58">58dp</dimen>
+    <dimen name="dimens219">219dp</dimen>
+    <dimen name="px1">1px</dimen>
+</resources>
