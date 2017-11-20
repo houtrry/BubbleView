@@ -4,7 +4,8 @@
 
 ## 实现效果
 
-![截图](https://raw.githubusercontent.com/houtrry/BubbleView/master/img/screenshot01.png)
+![截图](https://raw.githubusercontent.com/houtrry/BubbleView/master/img/screenshot01.png)  
+  
 上面的是RelativeLayout, 下面的是这次实现的控件com.houtrry.library.BubbleRelativeLayout
 
 ## 使用方法
