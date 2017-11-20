@@ -11,7 +11,7 @@
 ## 使用方法
 
 1. 把BubbleRelativeLayout.java以及res/values/attrs.xml/BubbleRelativeLayout 拷到项目中  
-2. 像使用不同RelativeLayout一样使用BubbleRelativeLayout  
+2. 像使用系统RelativeLayout一样使用BubbleRelativeLayout
 
 ```
 
@@ -38,12 +38,12 @@
 
 ```
 
-注意事项: 因为BubbleRelativeLayout会直接裁剪当前控件, 所以要注意子View的位置, 不要贴着箭头所在的边, 以防被部分裁剪掉, 影响显示的效果.  
+注意事项: 要注意子View的位置, 不要贴着箭头所在的边, 以防被部分裁剪掉, 影响显示的效果.
 
 3. 相关属性的解释  
-* arrowOffset: 箭头位置的偏移量, 当arrowType为left的时候, 箭头距离左侧边界的距离;当arrowType为right的时候, 箭头距离右侧边界的距离;当arrowType为center的时候, 该属性无效.  
-* arrowType: 箭头的位置.注意:这里的位置是指, 站在控件的中心位置, 面朝箭头所在的边的方向, 箭头在这条边的中心点的左侧(left), 正中心(center), 还是右侧(right).  
-* arrow_height: 箭头的高度. 我们这里, 可以将箭头当做一个三角形, 这个三角形以缺失的那条边为底边, 高度就是顶点到这条底边的垂直距离.  
+* arrowType: 箭头的位置.注意:这里的位置是指, 站在控件的中心位置, 面朝箭头所在的边的方向, 箭头在这条边的中心点的左侧(left), 正中心(center), 还是右侧(right).
+* arrowOffset: 箭头位置的偏移量, 当arrowType为left的时候, 箭头距离左侧边界的距离;当arrowType为right的时候, 箭头距离右侧边界的距离;当arrowType为center的时候, 该属性无效.
+* arrow_height: 箭头的高度. 我们这里, 可以将箭头当做一个三角形, 这个三角形以缺失的那条边为底边, 高度就是顶点到这条底边的垂直距离.
 * arrow_width: 箭头的宽度. 类似于arrow_height, arrow_width是缺失的那条底边的长度.  
 * borderColor: 边框的的颜色, 如果边框的宽度border_width为0, 则borderColor无效.  
 * border_width: 边框的的线条的宽度.  
