@@ -106,6 +106,23 @@ public class BubblePathBuilder {
     }
 
     public Path create() {
+        checkArgs();
+        return generateBubblePath();
+    }
+
+    /**
+     * 检查各个参数是否正常
+     */
+    private void checkArgs() {
+
+    }
+
+    /**
+     * 生成目标Path
+     *
+     * @return
+     */
+    private Path generateBubblePath() {
         mClipPath.reset();
         switch (mBubbleType) {
             case Constants.TYPE_BUBBLE_LEFT: {

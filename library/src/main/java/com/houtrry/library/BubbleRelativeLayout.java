@@ -31,8 +31,6 @@ public class BubbleRelativeLayout extends RelativeLayout {
      */
     private int mArrowType = Constants.TYPE_POSITION_CENTER;
 
-    private int mWidth;
-    private int mHeight;
     /**
      * 圆角的半径
      */
@@ -62,6 +60,8 @@ public class BubbleRelativeLayout extends RelativeLayout {
      */
     private float mArrowOffset = 100;
 
+    private Path mClipPath = null;
+
     public BubbleRelativeLayout(Context context) {
         this(context, null);
     }
@@ -82,7 +82,7 @@ public class BubbleRelativeLayout extends RelativeLayout {
     }
 
     private void initAttrs(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.BubbleRelativeLayout);
+        final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.BubbleRelativeLayout);
         mBubbleType = typedArray.getInt(R.styleable.BubbleRelativeLayout_bubbleType, TYPE_BUBBLE_LEFT);
         mArrowType = typedArray.getInt(R.styleable.BubbleRelativeLayout_arrowType, Constants.TYPE_POSITION_RIGHT);
         mCornerRadius = typedArray.getDimensionPixelSize(R.styleable.BubbleRelativeLayout_cornerRadius, 20);
@@ -104,12 +104,8 @@ public class BubbleRelativeLayout extends RelativeLayout {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        mWidth = w;
-        mHeight = h;
-        createClipPath();
+        createClipPath(w, h);
     }
-
-    private Path mClipPath = new Path();
 
     @Override
     public void draw(Canvas canvas) {
@@ -129,15 +125,15 @@ public class BubbleRelativeLayout extends RelativeLayout {
         super.dispatchDraw(canvas);
     }
 
-    private void createClipPath() {
+    private void createClipPath(int width, int height) {
         mClipPath = BubblePathBuilder.builder()
                 .setBubbleType(mBubbleType)
                 .setArrowType(mArrowType)
                 .setArrowWidth(mArrowWidth)
                 .setArrowHeight(mArrowHeight)
                 .setArrowOffset(mArrowOffset)
-                .setBubbleWidth(mWidth)
-                .setBubbleHeight(mHeight)
+                .setBubbleWidth(width)
+                .setBubbleHeight(height)
                 .setCornerRadius(mCornerRadius)
                 .create();
     }
