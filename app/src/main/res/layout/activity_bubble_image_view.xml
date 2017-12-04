@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bubble="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.houtrry.bubbleview.MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens10"
+                android:src="@drawable/girl"/>
+
+
+            <com.houtrry.library.BubbleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens10"
+                android:layout_marginBottom="@dimen/dimens10"
+                android:src="@drawable/girl"
+                bubble:arrowOffset="@dimen/dimens15"
+                bubble:arrowType="right"
+                bubble:arrow_height="@dimen/dimens5"
+                bubble:arrow_width="@dimen/dimens10"
+                bubble:borderColor="@color/color_gray_dark"
+                bubble:border_width="@dimen/px1"
+                bubble:bubbleType="left"
+                bubble:cornerRadius="@dimen/dimens5"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

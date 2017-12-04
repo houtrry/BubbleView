@@ -7,7 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
 import static com.houtrry.library.Constants.TYPE_BUBBLE_LEFT;
 
@@ -17,9 +17,9 @@ import static com.houtrry.library.Constants.TYPE_BUBBLE_LEFT;
  * @desc: ${TODO}
  */
 
-public class BubbleRelativeLayout extends RelativeLayout {
+public class BubbleLinearLayout extends LinearLayout {
 
-    private static final String TAG = BubbleRelativeLayout.class.getSimpleName();
+    private static final String TAG = BubbleLinearLayout.class.getSimpleName();
 
     private int mBubbleType = Constants.TYPE_BUBBLE_BOTTOM;
 
@@ -62,15 +62,15 @@ public class BubbleRelativeLayout extends RelativeLayout {
 
     private Path mClipPath = null;
 
-    public BubbleRelativeLayout(Context context) {
+    public BubbleLinearLayout(Context context) {
         this(context, null);
     }
 
-    public BubbleRelativeLayout(Context context, AttributeSet attrs) {
+    public BubbleLinearLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public BubbleRelativeLayout(Context context, AttributeSet attrs, int defStyle) {
+    public BubbleLinearLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(context, attrs);
     }

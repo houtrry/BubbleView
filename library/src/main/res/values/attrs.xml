@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="BubbleRelativeLayout">
+    <declare-styleable name="BubbleLayout">
         <attr name="bubbleType">
             <flag name="left" value="0x0000"/>
             <flag name="top" value="0x0001"/>
