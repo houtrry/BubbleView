@@ -97,6 +97,7 @@ public class BubbleRelativeLayout extends RelativeLayout {
     private void initPaint() {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setStyle(Paint.Style.STROKE);
+        // FIXME: 2017/12/4 这么做有一个问题无法回避: 虽然四个边是正常的, 但是四个圆角的线条宽度是正常线条宽度的2倍
         mPaint.setStrokeWidth(mBorderWidth * 2);
         mPaint.setColor(mBorderColor);
     }
