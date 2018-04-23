@@ -6,16 +6,16 @@
 
 ![截图](https://raw.githubusercontent.com/houtrry/BubbleView/master/img/screenshot01.png)  
   
-上面的是RelativeLayout, 下面的是这次实现的控件com.houtrry.library.BubbleRelativeLayout
+上面的是RelativeLayout, 下面的是这次实现的控件com.houtrry.bubble.BubbleRelativeLayout
 
 ## 使用方法
 
-1. 把BubbleRelativeLayout.java以及res/values/attrs.xml/BubbleRelativeLayout 拷到项目中  
+1. 引入 compile 'com.houtrry.bubble:bubbleView:1.0.0'
 2. 像使用系统RelativeLayout一样使用BubbleRelativeLayout
 
 ```
 
-    <com.houtrry.library.BubbleRelativeLayout
+    <com.houtrry.bubble.BubbleRelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dimens5"
@@ -34,7 +34,7 @@
 		<!-- 这里放各种子View  -->
 		.....
 
-    </com.houtrry.library.BubbleRelativeLayout>
+    </com.houtrry.bubble.BubbleRelativeLayout>
 
 ```
 
