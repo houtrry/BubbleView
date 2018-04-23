@@ -1,12 +1,12 @@
-package com.houtrry.library;
+package com.houtrry.bubble;
 
 import android.graphics.Path;
 
 /**
  * @author houtrry
  * @version $Rev$
- * @time 2017/12/1 9:13
- * @desc ${TODO}
+ * time 2017/12/1 9:13
+ *
  */
 
 public class BubblePathBuilder {

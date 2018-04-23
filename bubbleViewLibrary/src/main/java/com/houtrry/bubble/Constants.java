@@ -1,10 +1,10 @@
-package com.houtrry.library;
+package com.houtrry.bubble;
 
 /**
  * @author houtrry
  * @version $Rev$
- * @time 2017/12/1 9:22
- * @desc ${TODO}
+ * time 2017/12/1 9:22
+ *
  */
 
 public interface Constants {

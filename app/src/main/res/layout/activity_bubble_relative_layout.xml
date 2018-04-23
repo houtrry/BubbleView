@@ -154,7 +154,7 @@
             />
     </RelativeLayout>
 
-    <com.houtrry.library.BubbleRelativeLayout
+    <com.houtrry.bubble.BubbleRelativeLayout
         android:id="@+id/br_item_voice_message_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -296,7 +296,7 @@
             android:textColor="@color/color_select"
             android:textSize="@dimen/textSize13"
             />
-    </com.houtrry.library.BubbleRelativeLayout>
+    </com.houtrry.bubble.BubbleRelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

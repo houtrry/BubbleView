@@ -1,4 +1,4 @@
-package com.houtrry.library;
+package com.houtrry.bubble;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,12 +9,12 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
-import static com.houtrry.library.Constants.TYPE_BUBBLE_LEFT;
+import static com.houtrry.bubble.Constants.TYPE_BUBBLE_LEFT;
 
 /**
  * @author: houtrry
- * @time: 2017/11/5
- * @desc: ${TODO}
+ * time: 2017/11/5
+ *
  */
 
 public class BubbleRelativeLayout extends RelativeLayout {

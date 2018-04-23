@@ -31,7 +31,7 @@
                 android:src="@drawable/girl"/>
 
 
-            <com.houtrry.library.BubbleImageView
+            <com.houtrry.bubble.BubbleImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimens10"

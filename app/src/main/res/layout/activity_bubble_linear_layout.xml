@@ -149,7 +149,7 @@
             />
     </LinearLayout>
 
-    <com.houtrry.library.BubbleLinearLayout
+    <com.houtrry.bubble.BubbleLinearLayout
         android:id="@+id/br_item_voice_message_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -286,7 +286,7 @@
             android:textColor="@color/color_select"
             android:textSize="@dimen/textSize13"
             />
-    </com.houtrry.library.BubbleLinearLayout>
+    </com.houtrry.bubble.BubbleLinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

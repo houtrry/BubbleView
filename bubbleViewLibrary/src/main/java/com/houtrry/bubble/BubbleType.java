@@ -1,4 +1,4 @@
-package com.houtrry.library;
+package com.houtrry.bubble;
 
 import android.support.annotation.IntDef;
 
@@ -8,10 +8,10 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * @author houtrry
  * @version $Rev$
- * @time 2017/12/1 9:25
- * @desc ${TODO}
+ * time 2017/12/1 9:21
+ *
  */
-@IntDef({Constants.TYPE_POSITION_LEFT, Constants.TYPE_POSITION_CENTER, Constants.TYPE_POSITION_RIGHT})
+@IntDef({Constants.TYPE_BUBBLE_LEFT, Constants.TYPE_BUBBLE_TOP, Constants.TYPE_BUBBLE_RIGHT, Constants.TYPE_BUBBLE_BOTTOM})
 @Retention(RetentionPolicy.SOURCE)
-public @interface PositionType {
+public @interface BubbleType {
 }

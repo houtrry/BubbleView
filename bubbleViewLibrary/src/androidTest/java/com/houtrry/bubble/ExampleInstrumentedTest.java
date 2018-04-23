@@ -1,4 +1,4 @@
-package com.houtrry.library;
+package com.houtrry.bubble;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
